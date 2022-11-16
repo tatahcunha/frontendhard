@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Triângulo</title>
+</head>
+<body>
+		<script language="javascript">
+		for (c = 1; c<= 2; c++)
+		{
+			var l1=prompt("Lado 1:");
+			var l2=prompt("Lado 2:");
+			var l3=prompt("Lado 3:");
+			l1=parseInt(l1);
+			l2=parseInt(l2);
+			l3=parseInt(l3);
+			if((l1<l2+l3) && (l2<l1+l3) && (l3<l1+l2)){
+				document.write("é um triangulo");
+				document.write("<br>");
+
+			if((l1==l2) && (l2==l3) && (l3==l1)){
+				document.write("Equilatero");
+				document.write("<br>");
+			}
+			else{
+			if((l1==l2) || (l2==l3) || (l3==l2)){
+				document.write("Isosceles");
+				document.write("<br>");
+			}
+			else{
+			if((l1!=l2) && (l2!=l3) && (l3!=l2)){
+				document.write("Escaleno");
+				document.write("<br>");
+				}
+			}
+			}
+			}
+			else{
+			document.write("Não é um Triangulo");
+			}
+		}
+	</script>
+</body>
+</html>
